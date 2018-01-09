@@ -37,13 +37,25 @@
 //     alert("Answer must be either Yes or No.");
 // }
 
-//QUESTION 3 - 
-var answerThree = prompt("Does Tyler know exactly what he wants to do after this program? \nRespond Yes or No").toUpperCase();
-console.log("Response to question 3, life plans: " + answerThree);
-if (answerThree === "NO"){
-    alert("You're right! He's in quite the state of flux right now.");
-} else if(answerThree === "YES"){
-    alert("He wishes.");
+// //QUESTION 3 - Life Plans
+// var answerThree = prompt("Does Tyler know exactly what he wants to do after this program? \nRespond Yes or No").toUpperCase();
+// console.log("Response to question 3, life plans: " + answerThree);
+// if (answerThree === "NO"){
+//     alert("You're right! He's in quite the state of flux right now.");
+// } else if(answerThree === "YES"){
+//     alert("He wishes.");
+// } else {
+//     alert("Answer must be either Yes or No.");
+// }
+
+//QUESTION 4 - Instapot Excitement
+var answerFour = prompt("Is Tyler excited that he got an Instapot for christmas? \nRespond Yes or No").toUpperCase();
+console.log("Response to question 4, instapot excitement: " + answerFour);
+if (answerFour === "YES"){
+    alert("Damn skippy he's excited.");
+} else if(answerFour === "NO"){
+    alert("What do you take him for? A monster?!");
 } else {
     alert("Answer must be either Yes or No.");
 }
+
