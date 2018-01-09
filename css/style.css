@@ -1,0 +1,29 @@
+body {
+    background-image: url("/img/profilePicProf.jpg")
+}
+
+h1 {
+    font-size: 2em;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.25em;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+ul { 
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    line-height: 160%
+}
+
+img {
+    padding: 20px;
+}
