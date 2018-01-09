@@ -10,7 +10,7 @@
 // alert("Hi there " + userName + ". Pleased to meet you. Time for your quiz about me!")
 
 
-// // QUESTION 1
+// // QUESTION 1 - Hebrew
 // // ask question and store answer in var
 // var answerOne = prompt("Does Tyler speak some Hebrew? \nRespond Yes or No.").toUpperCase();
 
@@ -26,13 +26,24 @@
 //     alert("Answer must be either Yes or No.");
 // }
 
-//QUESTION 2
-var answerTwo = prompt("Does Tyler currently have a pet? \nRespond Yes or No").toUpperCase();
-console.log("Response to question 2, own pet: " + answerTwo);
-if (answerTwo === "NO"){
-    alert("You're right :( \nBut him and his girlfriend are going to get a cat soon and name it Peeve... get it?");
-} else if(answerTwo === "YES"){
-    alert("Sadly he does not :( \nBut him and his girlfriend are going to get a cat soon and name it Peeve... get it?");
+// //QUESTION 2 - Pets
+// var answerTwo = prompt("Does Tyler currently have a pet? \nRespond Yes or No").toUpperCase();
+// console.log("Response to question 2, own pet: " + answerTwo);
+// if (answerTwo === "NO"){
+//     alert("You're right :( \nBut him and his girlfriend are going to get a cat soon and name it Peeve... get it?");
+// } else if(answerTwo === "YES"){
+//     alert("Sadly he does not :( \nBut him and his girlfriend are going to get a cat soon and name it Peeve... get it?");
+// } else {
+//     alert("Answer must be either Yes or No.");
+// }
+
+//QUESTION 3 - 
+var answerThree = prompt("Does Tyler know exactly what he wants to do after this program? \nRespond Yes or No").toUpperCase();
+console.log("Response to question 3, life plans: " + answerThree);
+if (answerThree === "NO"){
+    alert("You're right! He's in quite the state of flux right now.");
+} else if(answerThree === "YES"){
+    alert("He wishes.");
 } else {
     alert("Answer must be either Yes or No.");
 }
