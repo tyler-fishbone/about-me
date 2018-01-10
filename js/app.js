@@ -83,27 +83,40 @@ var numCorrect = 0;
 // }
 // console.log('Current numCorrect: ' + numCorrect);
 
+// // QUESTION 6 - How many siblings do i have?
+// var numSiblings = 1;
+// for (var i = 0; i < 4 ; i++){
+//     var guessSiblings = parseInt(prompt('Guess how many siblings I have. \nAnswer must be an integer.'));
+//     if(guessSiblings === numSiblings){
+//         alert('You got it! I have 1 sister named Liza.');
+//         numCorrect++;
+//         break;
+//     } else if (guessSiblings > numSiblings){
+//         alert('Too high. You have ' + (3-i) + ' guess(es) left.')
+//     } else {
+//         alert('Too low. You have ' + (3-i) + ' guess(es) left.')
+//     }
+// }
 
-// QUESTION 6 - How many siblings do i have?
-var numSiblings = 1;
-for (var i = 4; i > 0 ; i--){
-    var guessSiblings = parseInt(prompt('Guess how many siblings I have. \nAnswer much be an integer.'));
-    if(guessSiblings === numSiblings){
-        alert('You got it! I have 1 sister named Liza');
-        numCorrect++;
+// QUESTION 7 - Countries I visited in Asia
+var countriesVisited = ['japan', 'thailand', 'china', 'hong kong', 'indonesia'];
+var flag = false;
+for (var i = 0; i < 6; i++){
+    var countryGuess = prompt('I visited Asia last year, can you guess one of the countries I went to?').toLowerCase();
+    for(var j = 0; j < countriesVisited.length; j++){
+        if(countryGuess === countriesVisited[j]){
+            alert('You got it! I visited ' + countryGuess + ' last year.');
+            numCorrect++;
+            flag = true;
+            break;
+        }
+    }
+    if (flag){
         break;
-    } else if (guessSiblings > numSiblings){
-        alert('Too high. You have ' + (i-1) + ' guess(es) left.')
     } else {
-        alert('Too low. You have ' + (i-1) + ' guess(es) left.')
+        alert('No sadly I did not get to visit ' + countryGuess + '. Hopefully next time though!\nYou have ' + (6 - i) + ' guesses left.');
     }
 }
-
-// QUESTION 7 - What countries in Asia did I visit last year?
-// Answers: Japan, Thailand, China, Indonesia
-// Users will have 6 chances to guess these
-// Upon success or failure to guess them correctly all the correct respones will be displayed
-// *correct answer counter will increase or remain the same
 
 // DISPLAY CORRECT ANSWERS
 if(numCorrect >= 5){
