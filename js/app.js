@@ -59,33 +59,35 @@ function questionLifePlans(){
   console.log('Current numCorrect: ' + numCorrect);
 }
 
+function questionInstapot(){
+  // QUESTION 4 - Instapot Excitement
+  var answerFour = prompt('Is Tyler excited that he got an Instapot for christmas? \nRespond Yes or No').toUpperCase();
+  console.log('Response to question 4, instapot excitement: ' + answerFour);
+  if (answerFour === 'YES' || answerFour === 'Y'){
+    numCorrect++;
+    alert('Damn skippy he\'s excited.');
+  } else if(answerFour === 'NO' || answerFour === 'N'){
+    alert('What do you take him for? A monster?!');
+  } else {
+    alert('Answer must be either Yes or No.');
+  }
+  console.log('Current numCorrect: ' + numCorrect);
+}
 
-// // QUESTION 4 - Instapot Excitement
-// var answerFour = prompt('Is Tyler excited that he got an Instapot for christmas? \nRespond Yes or No').toUpperCase();
-// console.log('Response to question 4, instapot excitement: ' + answerFour);
-// if (answerFour === 'YES' || answerFour === 'Y'){
-//   numCorrect++;
-//   alert('Damn skippy he\'s excited.');
-// } else if(answerFour === 'NO' || answerFour === 'N'){
-//   alert('What do you take him for? A monster?!');
-// } else {
-//   alert('Answer must be either Yes or No.');
-// }
-// console.log('Current numCorrect: ' + numCorrect);
-
-
-// // QUESTION 5 - Space travel
-// var answerFive = prompt('Has Tyler already started saving to go to outer space one day? \nRespond Yes or No').toUpperCase();
-// console.log('Response to question 5, space travel fund: ' + answerFive);
-// if (answerFive === 'NO' || answerFive === 'N'){
-//   numCorrect++;
-//   alert('True, but it\'s a new years resolution to start one.');
-// } else if(answerFive === 'YES' || answerFive === 'Y'){
-//   alert('Actually not yet, but he wants to start saving this year.');
-// } else {
-//   alert('Answer must be either Yes or No.');
-// }
-// console.log('Current numCorrect: ' + numCorrect);
+function questionSpaceTravel(){
+  // QUESTION 5 - Space travel
+  var answerFive = prompt('Has Tyler already started saving to go to outer space one day? \nRespond Yes or No').toUpperCase();
+  console.log('Response to question 5, space travel fund: ' + answerFive);
+  if (answerFive === 'NO' || answerFive === 'N'){
+    numCorrect++;
+    alert('True, but it\'s a new years resolution to start one.');
+  } else if(answerFive === 'YES' || answerFive === 'Y'){
+    alert('Actually not yet, but he wants to start saving this year.');
+  } else {
+    alert('Answer must be either Yes or No.');
+  }
+  console.log('Current numCorrect: ' + numCorrect);
+}
 
 // // QUESTION 6 - How many siblings do i have?
 // var numSiblings = 1;
@@ -141,3 +143,5 @@ function questionLifePlans(){
 questionHebrew();
 questionPets();
 questionLifePlans();
+questionInstapot();
+questionSpaceTravel();
