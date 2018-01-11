@@ -10,22 +10,24 @@ console.log('User\'s name: ' + userName);
 //say hello to user with their name
 alert('Hi there ' + userName + '. Pleased to meet you. Time for your quiz about me!');
 
-// QUESTION 1 - Hebrew
-// ask question and store answer in var
-var answerOne = prompt('Does Tyler speak some Hebrew? \nRespond Yes or No.').toUpperCase();
-// print answer to console
-console.log('Response to question 1, speak hebrew: ' + answerOne);
-// check answer then notify user if they are correct or incorrect
-if (answerOne === 'YES' || answerOne === 'Y'){
-  numCorrect++;
-  alert('You\'re right! He lived in Israel for a while and got super nerdy on it.');
-} else if (answerOne === 'NO' || answerOne === 'N'){
-  alert('Actually he does!');
-} else {
-  alert('Answer must be either Yes or No.');
+function questionHebrew(){
+  // QUESTION 1 - Hebrew
+  // ask question and store answer in var
+  var answerOne = prompt('Does Tyler speak some Hebrew? \nRespond Yes or No.').toUpperCase();
+  // print answer to console
+  console.log('Response to question 1, speak hebrew: ' + answerOne);
+  // check answer then notify user if they are correct or incorrect
+  if (answerOne === 'YES' || answerOne === 'Y'){
+    numCorrect++;
+    alert('You\'re right! He lived in Israel for a while and got super nerdy on it.');
+  } else if (answerOne === 'NO' || answerOne === 'N'){
+    alert('Actually he does!');
+  } else {
+    alert('Answer must be either Yes or No.');
+  }
+  // *correct answer counter will increase or remain the same
+  console.log('Current numCorrect: ' + numCorrect);
 }
-// *correct answer counter will increase or remain the same
-console.log('Current numCorrect: ' + numCorrect);
 
 
 // QUESTION 2 - Pets
@@ -133,3 +135,5 @@ if(numCorrect >= 5){
   alert(userName + ', you got a ' + numCorrect + ' out of 7. I\'m going to try hard not to be offended, but honestly my cat could have done better than that.');
 }
 console.log('Final numCorrect: ' + numCorrect + ' / 7 possible');
+
+questionHebrew();
