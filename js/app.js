@@ -16,10 +16,10 @@ var answerOne = prompt('Does Tyler speak some Hebrew? \nRespond Yes or No.').toU
 // print answer to console
 console.log('Response to question 1, speak hebrew: ' + answerOne);
 // check answer then notify user if they are correct or incorrect
-if (answerOne === 'YES'){
+if (answerOne === 'YES' || answerOne === 'Y'){
   numCorrect++;
   alert('You\'re right! He lived in Israel for a while and got super nerdy on it.');
-} else if (answerOne === 'NO'){
+} else if (answerOne === 'NO' || answerOne === 'N'){
   alert('Actually he does!');
 } else {
   alert('Answer must be either Yes or No.');
@@ -31,10 +31,10 @@ console.log('Current numCorrect: ' + numCorrect);
 // QUESTION 2 - Pets
 var answerTwo = prompt('Does Tyler currently have a pet? \nRespond Yes or No').toUpperCase();
 console.log('Response to question 2, own pet: ' + answerTwo);
-if (answerTwo === 'NO'){
+if (answerTwo === 'NO' || answerTwo === 'N'){
   numCorrect++;
   alert('You\'re right :( \nBut him and his girlfriend are going to get a cat soon and name it Peeve...\n... \nGet it?');
-} else if(answerTwo === 'YES'){
+} else if(answerTwo === 'YES' || answerTwo === 'Y'){
   alert('Sadly he does not :( \nBut him and his girlfriend are going to get a cat soon and name it Peeve... get it?');
 } else {
   alert('Answer must be either Yes or No.');
@@ -45,12 +45,12 @@ console.log('Current numCorrect: ' + numCorrect);
 // QUESTION 3 - Life Plans
 var answerThree = prompt('Does Tyler know exactly what he wants to do after this program? \nRespond Yes or No').toUpperCase();
 console.log('Response to question 3, life plans: ' + answerThree);
-if (answerThree === 'NO'){
+if (answerThree === 'NO' || answerThree === 'N'){
   numCorrect++;
   alert('You\'re right! He\'s in quite the state of flux right now.');
-} else if(answerThree === 'YES'){
+} else if(answerThree === 'YES' || answerThree === 'Y'){
   alert('He wishes.');
-} else {e
+} else {
   alert('Answer must be either Yes or No.');
 }
 console.log('Current numCorrect: ' + numCorrect);
@@ -59,10 +59,10 @@ console.log('Current numCorrect: ' + numCorrect);
 // QUESTION 4 - Instapot Excitement
 var answerFour = prompt('Is Tyler excited that he got an Instapot for christmas? \nRespond Yes or No').toUpperCase();
 console.log('Response to question 4, instapot excitement: ' + answerFour);
-if (answerFour === 'YES'){
+if (answerFour === 'YES' || answerFour === 'Y'){
   numCorrect++;
   alert('Damn skippy he\'s excited.');
-} else if(answerFour === 'NO'){
+} else if(answerFour === 'NO' || answerFour === 'N'){
   alert('What do you take him for? A monster?!');
 } else {
   alert('Answer must be either Yes or No.');
@@ -73,10 +73,10 @@ console.log('Current numCorrect: ' + numCorrect);
 // QUESTION 5 - Space travel
 var answerFive = prompt('Has Tyler already started saving to go to outer space one day? \nRespond Yes or No').toUpperCase();
 console.log('Response to question 5, space travel fund: ' + answerFive);
-if (answerFive === 'NO'){
+if (answerFive === 'NO' || answerFive === 'N'){
   numCorrect++;
   alert('True, but it\'s a new years resolution to start one.');
-} else if(answerFive === 'YES'){
+} else if(answerFive === 'YES' || answerFive === 'Y'){
   alert('Actually not yet, but he wants to start saving this year.');
 } else {
   alert('Answer must be either Yes or No.');
@@ -86,7 +86,7 @@ console.log('Current numCorrect: ' + numCorrect);
 // QUESTION 6 - How many siblings do i have?
 var numSiblings = 1;
 for (var i = 0; i < 4 ; i++){
-  var guessSiblings = parseInt(prompt('Guess how many siblings I have. \nAnswer must be an integer.'));
+  var guessSiblings = parseInt(prompt('Guess how many siblings I have. \n(answer must be an integer)'));
   console.log('User guessed siblings: ' + guessSiblings);
 
   if(guessSiblings === numSiblings){
