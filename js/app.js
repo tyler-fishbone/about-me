@@ -86,7 +86,8 @@ console.log('Current numCorrect: ' + numCorrect);
 // QUESTION 6 - How many siblings do i have?
 var numSiblings = 1;
 for (var i = 0; i < 4 ; i++){
-    var guessSiblings = parseInt(prompt('Ok new game!\nGuess how many siblings I have. \nAnswer must be an integer.'));
+    var guessSiblings = parseInt(prompt('Guess how many siblings I have. \nAnswer must be an integer.'));
+    console.log('User guessed siblings: ' + guessSiblings) 
     if(guessSiblings === numSiblings){
         alert('You got it! I have 1 sister named Liza.');
         numCorrect++;
@@ -105,6 +106,7 @@ var numGuesses = 6
 var flag = false;
 for (var i = 0; i < numGuesses; i++){
     var countryGuess = prompt('I visited Asia last year, can you guess one of the countries I went to?').toLowerCase();
+    console.log('User guessed country: ' + countryGuess);
     for(var j = 0; j < countriesVisited.length; j++){
         if(countryGuess === countriesVisited[j]){
             alert('You got it! I visited ' + countryGuess + ' last year.');
@@ -125,7 +127,7 @@ console.log('Current numCorrect: ' + numCorrect);
 if(numCorrect >= 5){
     alert(userName + ', you rock! You got a ' + numCorrect + ' out of 7! Tyler is very flattered.');
 } else if (numCorrect >= 2){
-    alert(userName + ', ok ok. Could have been worse. You got a ' + numCorrect + ' out of 7. Not that much worse but still..');
+    alert(userName + ', not too bad! Could have been worse. You got a ' + numCorrect + ' out of 7. \nNot that much worse but still..');
 } else {
     alert(userName + ', you got a ' + numCorrect + ' out of 7. I\'m going to try hard not to be offended, but honestly my cat could have done better than that.');
 }
