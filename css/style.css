@@ -1,37 +1,56 @@
 /* Styling goals
+    Put Color border around entire page
     Center h1 and create  horizontal line underneath
     style top 10 list
     give whole page a color
-    
 
 */
 
+* {
+    border: 10px solid black;
+}
+
+body {
+    font-family: arial;
+    border: 7px dashed rgba(43, 170, 255, 0.205);
+    background-color: rgba(43, 170, 255, 0.205);
+}
 
 h1 {
+    text-align: center;
+    color: rgb(25, 33, 102);
     font-size: 2em;
     padding: 20px;
-    border: 5px solid #de33ee;
-    width: 275px;
-    text-align: center; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;
+    border-bottom: 7px dashed rgba(43, 170, 255, 0.205);
+    width: auto;
 }
 
 h2 {
     font-size: 1.25em;
-    padding: 10px;
-    padding-left: 20px;
+    padding: 30px 5px 5px 5px;
+}
+h3 {
+    font-size: 1em;
+    padding: 10px 5px 5px 5px;
 }
 
-ul { 
+ul, ol { 
     display: block;
     list-style-type: disc;
     margin-top: 1em;
     margin-bottom: 1 em;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 40px;
+    padding: 0px 40px;
     line-height: 160%
 }
 
-img {
+#facePic {
+    float: right;
     padding: 20px;
+}
+
+#quizInfo {
+    float: left;
+    padding-bottom: 30px;
 }
