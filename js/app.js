@@ -2,13 +2,16 @@
 
 //Establish Question Counter for correct answers
 var numCorrect = 0;
+var userName;
 
-// get and store user's name
-var userName = prompt('Hi there, welcome to my About Me page! What\'s your name?');
-// log the user's name
-console.log('User\'s name: ' + userName);
-//say hello to user with their name
-alert('Hi there ' + userName + '. Pleased to meet you. Time for your quiz about me!');
+function getUserName(){
+  // get and store user's name
+  userName = prompt('Hi there, welcome to my About Me page! What\'s your name?');
+  // log the user's name
+  console.log('User\'s name: ' + userName);
+  //say hello to user with their name
+  alert('Hi there ' + userName + '. Pleased to meet you. Time for your quiz about me!');
+}
 
 function questionHebrew(){
   // QUESTION 1 - Hebrew
@@ -145,7 +148,8 @@ function displayNumCorrect(){
   }
   console.log('Final numCorrect: ' + numCorrect + ' / 7 possible');
 }
-
+//Run all functions
+getUserName();
 questionHebrew();
 questionPets();
 questionLifePlans();
